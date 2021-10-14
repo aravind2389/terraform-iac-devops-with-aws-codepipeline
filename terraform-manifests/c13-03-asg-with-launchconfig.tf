@@ -8,7 +8,7 @@ module "autoscaling" {
 
   min_size                  = 2
   max_size                  = 10
-  desired_capacity          = 3
+  desired_capacity          = 2
   wait_for_capacity_timeout = 0
   health_check_type         = "EC2"
   vpc_zone_identifier       = module.vpc.private_subnets
